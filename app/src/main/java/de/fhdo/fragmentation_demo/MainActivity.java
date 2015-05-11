@@ -1,18 +1,29 @@
 package de.fhdo.fragmentation_demo;
 
+import android.os.Build;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
-// LALALA MARCEL
 public class MainActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        TextView t1 = (TextView)findViewById(R.id.tv01);
+        TextView t2 = (TextView)findViewById(R.id.tv02);
+        TextView t3 = (TextView)findViewById(R.id.tv03);
+
+        t1.setText(Build.VERSION.RELEASE);
+        t2.setText(Build.VERSION.CODENAME);
+
+        Integer sdk = Build.VERSION.SDK_INT;
+        t3.setText(sdk.toString());
     }
 
     @Override
