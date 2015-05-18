@@ -39,9 +39,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="3"
+        android:text="4"
         android:id="@+id/tv04"
         android:layout_below="@+id/tv03"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    android:text="5"
+    android:id="@+id/tv05"
+    android:layout_below="@+id/tv04"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+
+
 </RelativeLayout>

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.Display;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.TextureView;
 import android.widget.TextView;
 
 
@@ -51,6 +52,12 @@ public class MainActivity extends ActionBarActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
+        }
+
+        if (id == R.id.action_search)
+        {
+            TextView t5 = (TextView)findViewById(R.id.tv05);
+            t5.setText("Bei den Buchen musst du suchen");
         }
 
         return super.onOptionsItemSelected(item);
