@@ -30,8 +30,9 @@ public class MainActivity extends ActionBarActivity {
         t3.setText(sdk.toString());
 
         Display display = getWindowManager().getDefaultDisplay();
-        Point size = new Point();
-        display.getSize(size);
+        Point size = new Point(-1,-1);
+        //display.getSize(size);
+        size.set(display.getWidth(), display.getHeight());
         t4.setText("Screen size: " + size.x + "x" + size.y + " Pixels");
     }
 
