@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "de.fhdo.fragmentation_demo"
-        minSdkVersion 14
+        minSdkVersion 7
         targetSdkVersion 18
         versionCode 1
         versionName "1.0"
