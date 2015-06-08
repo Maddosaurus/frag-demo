@@ -23,11 +23,11 @@ public class MainActivity extends ActionBarActivity {
         TextView t3 = (TextView)findViewById(R.id.tv03);
         TextView t4 = (TextView)findViewById(R.id.tv04);
 
-        t1.setText(Build.VERSION.RELEASE);
-        t2.setText(Build.VERSION.CODENAME);
+        t1.setText("Release Version: " + Build.VERSION.RELEASE);
+        t2.setText("Codename: " + Build.VERSION.CODENAME);
 
         Integer sdk = Build.VERSION.SDK_INT;
-        t3.setText(sdk.toString());
+        t3.setText("SDK Version: " + sdk.toString());
 
         Display display = getWindowManager().getDefaultDisplay();
         Point size = new Point(-1,-1);
