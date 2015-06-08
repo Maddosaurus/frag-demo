@@ -1,9 +1,9 @@
 package de.fhdo.fragmentation_demo;
 
 import android.annotation.TargetApi;
+import android.app.Activity;
 import android.graphics.Point;
 import android.os.Build;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Display;
 import android.view.Menu;
@@ -12,7 +12,7 @@ import android.view.TextureView;
 import android.widget.TextView;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB_MR2)
     @Override
