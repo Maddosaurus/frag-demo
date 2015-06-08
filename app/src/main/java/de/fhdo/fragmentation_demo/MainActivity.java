@@ -1,5 +1,6 @@
 package de.fhdo.fragmentation_demo;
 
+import android.annotation.TargetApi;
 import android.graphics.Point;
 import android.os.Build;
 import android.support.v7.app.ActionBarActivity;
@@ -13,6 +14,7 @@ import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity {
 
+    @TargetApi(Build.VERSION_CODES.HONEYCOMB_MR2)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
