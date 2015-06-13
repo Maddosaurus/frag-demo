@@ -2,6 +2,7 @@ package de.fhdo.fragmentation_demo;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Point;
 import android.os.Build;
 import android.os.Bundle;
@@ -81,10 +82,15 @@ public class MainActivity extends Activity {
    public void portraitButtonClick(View view)
    {
        Toast.makeText(getApplicationContext(), "Portrait!", Toast.LENGTH_SHORT).show();
+       Intent intent = new Intent(this, portrait.class);
+       startActivity(intent);
+
    }
 
     public void landscapeButtonClick(View view)
     {
         Toast.makeText(getApplicationContext(), "Landscape!", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, landscape.class);
+        startActivity(intent);
     }
 }
