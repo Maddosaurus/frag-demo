@@ -9,7 +9,9 @@ import android.view.Display;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.TextureView;
+import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class MainActivity extends Activity {
@@ -74,5 +76,15 @@ public class MainActivity extends Activity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+   public void portraitButtonClick(View view)
+   {
+       Toast.makeText(getApplicationContext(), "Portrait!", Toast.LENGTH_SHORT).show();
+   }
+
+    public void landscapeButtonClick(View view)
+    {
+        Toast.makeText(getApplicationContext(), "Landscape!", Toast.LENGTH_SHORT).show();
     }
 }
