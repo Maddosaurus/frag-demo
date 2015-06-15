@@ -87,6 +87,14 @@ public class MainActivity extends Activity {
 
    }
 
+    public void portrait2ButtonClick(View view)
+    {
+        Toast.makeText(getApplicationContext(), "Portrait! Kaputt!", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, portrait2.class);
+        startActivity(intent);
+
+    }
+
     public void landscapeButtonClick(View view)
     {
         Toast.makeText(getApplicationContext(), "Landscape!", Toast.LENGTH_SHORT).show();

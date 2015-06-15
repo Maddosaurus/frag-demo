@@ -7,4 +7,5 @@
     <string name="title_activity_main_activity2">MainActivity2Activity</string>
     <string name="title_activity_portrait">portrait</string>
     <string name="title_activity_landscape">landscape</string>
+    <string name="title_activity_portrait2">portrait2</string>
 </resources>
