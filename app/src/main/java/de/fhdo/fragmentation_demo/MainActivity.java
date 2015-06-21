@@ -2,7 +2,7 @@ package de.fhdo.fragmentation_demo;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
-import android.support.v7.app.ActionBarActivity;
+//import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
 import android.graphics.Point;
 import android.os.Build;
@@ -15,8 +15,8 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends ActionBarActivity {
-//public class MainActivity extends Activity {
+//public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB_MR2)
     @Override
